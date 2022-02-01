@@ -1,0 +1,24 @@
+{
+  "name": "node-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ./src/index.js --name $npm_package_name",
+    "start:mac": "pm2 start ./src/index.js --name $npm_package_name",
+    "start:win": "pm2 start ./src/index.js --name %npm_package_name",
+    "stop:mac": "pm2 stop $npm_package_name",
+    "stop:win": "pm2 stop %npm_package_name",
+    "start:local": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpapa/node-hello/issues"
+  },
+  "homepage": "https://github.com/johnpapa/node-hello#readme"
+}
